@@ -9,9 +9,13 @@ The US National Oceanic and Atmospheric Administratio (NOAA) publishes a gridded
 
 We'd like you to build a web application that visualizes the NOAA data. We've broken down the project goals into stages. This activity is time boxed to 4 hours. Please work through these stages and deliver what you have at the 4 hour mark. We do not expect all stages will be completed perfectly in that amount of time. Please do the best you can and consider what you might change if you had more time.
 
+**Stage 0**
+
+Generate a GeoJSON file of the polygon grid cells of the NOAA data.
+
 **Stage 1**
 
-Create a React app that displays a map (we like [deck.gl](https://github.com/visgl/deck.gl/tree/master/examples/get-started/react/basic)) and the outline of the grid cells from NOAA.
+Create a React app that displays a map (we like [deck.gl](https://github.com/visgl/deck.gl/tree/master/examples/get-started/react/basic)) and the outline of the grid cells you generated.
 
 **Stage 2**
 

@@ -49,6 +49,7 @@ At the interview, you will present your work. Consider these questions beforehan
 * What clarifying questions would you ask our Requirements Analyst if you were given this request?
 * How would you store the NOAA data to optimize the queries and calculations being performed?
 * Which AWS services might be used to implement the daily process you designed?
+* If you had additional time, what would you change about your web app?
 * What other visualizations might be interesting to add to the map?
 * What other calculations might be interesting to compute?
 * What confounding variables make the calculations above suspect?

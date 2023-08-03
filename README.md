@@ -36,12 +36,11 @@ Here are some calculations that we might be interested in calculating for this d
 For a given year, find 
 * the 10 most abnormally hot (high above average high) grid cells
 * the 10 most abnormally cold (low below average low) grid cells
-* calculate the average abnormal high and low temperature for each grid over a 30 day sliding window. Report on the 10 most abnormally hot and cold grid cells
 * which slice of latitude is most affected by abnormal temperatures
 * Using Simplemaps' Basic World Cities Database (https://simplemaps.com/data/world-cities) weight each cell's temperature aberrations based on the number of people living within that cell and re-calculate the 10 most abnormally hot grid cells
 * What are the 10 most "livable" grid cells based on having the least temperature aberration and existing number of people living within that grid cell
 
-Create a workflow document that describes a process that would run the calculations above (don't actually write the code to do the calculations) every day as new weather data comes in. Consider scheduling software, performance, and results storage.
+_Create a workflow document_ that describes a process that would run the calculations above (**don't actually write the code to do the calculations**) every day as new weather data comes in. Consider scheduling software, performance, and results storage.
 
 ### Part 3: Questions
 
@@ -49,8 +48,7 @@ At the interview, you will present your work. Consider these questions beforehan
 
 * What clarifying questions would you ask our Requirements Analyst if you were given this request?
 * How would you store the NOAA data to optimize the queries and calculations being performed?
+* Which AWS services might be used to implement the daily process you designed?
 * What other visualizations might be interesting to add to the map?
 * What other calculations might be interesting to compute?
-* Which AWS services might be used to implement the daily process you designed?
-* What additional information would you need in order to find which grid cells our research plots should be located in?
 * What confounding variables make the calculations above suspect?

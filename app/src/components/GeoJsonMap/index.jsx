@@ -43,7 +43,6 @@ export default function GeoJsonMap({ dataUrl }) {
       lineWidthScale: 20,
       lineWidthMinPixels: 2,
       getFillColor: (d) => getColorFromAnomaly(d.properties.TempAnomaly),
-      getRadius: 100,
       getLineWidth: 1,
       getElevation: 30,
     }),

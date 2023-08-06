@@ -19,6 +19,10 @@ export const AppRoutes = createBrowserRouter([
         path: "/",
         element: <AnomalyMap />,
       },
+      {
+        path: "/:selectedDate",
+        element: <AnomalyMap />,
+      },
     ],
   },
 ]);

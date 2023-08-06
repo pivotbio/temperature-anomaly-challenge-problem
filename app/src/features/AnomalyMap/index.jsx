@@ -1,7 +1,10 @@
+import { useParams } from "react-router-dom";
 import GeoJsonMap from "@/components/GeoJsonMap";
 
 export default function AnomalyMap() {
-  const dataUrl = "geo/2022-06-20.geojson"; // Change this to the appropriate URL/path.
+  const { selectedDate } = useParams();
+  const dateFile = selectedDate ?? "2022-06-20";
+  const dataUrl = `geo/${dateFile}.geojson`;
 
   return <GeoJsonMap dataUrl={dataUrl} />;
 }

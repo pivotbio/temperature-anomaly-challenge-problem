@@ -6,6 +6,10 @@ ghcnd.grid.tar.gz:
 	curl -L --output ghcnd.grid.tar.gz https://www.ncei.noaa.gov/pub/data/ghcn/daily/grid/ghcnd.grid.tar.gz
 
 
+test: grid
+	python3 generate_geojson_test.py
+
+
 # Don't remove the ghcnd.grid.tar.gz file as it takes awhile to download
 .PHONY: clean
 clean: 

@@ -1,10 +1,8 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import DatePicker from "react-datepicker";
-import moment from "moment-timezone";
-
 import "react-datepicker/dist/react-datepicker.css";
 
-moment.tz.setDefault("UTC");
+import useGetSelectedDate from "@/hooks/useGetSelectedDate";
 
 function Links({ className }) {
   return (
@@ -18,7 +16,7 @@ function Links({ className }) {
 
 export default function Header() {
   const navigate = useNavigate();
-  const { selectedDate } = useParams();
+  const selectedDate = useGetSelectedDate();
 
   return (
     <header className="relative z-10 max-h flex items-center p-2">

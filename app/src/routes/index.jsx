@@ -1,5 +1,6 @@
 import MainLayout from "@/layouts/main";
 import { createBrowserRouter, Outlet } from "react-router-dom";
+import AnomalyMap from "@/features/AnomalyMap";
 
 function App() {
   return (
@@ -13,6 +14,11 @@ export const AppRoutes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [],
+    children: [
+      {
+        path: "/",
+        element: <AnomalyMap />,
+      },
+    ],
   },
 ]);

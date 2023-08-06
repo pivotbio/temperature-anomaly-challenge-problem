@@ -25,6 +25,9 @@ RUN sh -c "$(curl -L https://github.com/deluan/zsh-in-docker/releases/download/v
   
 RUN chsh -s /bin/zsh
 
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+  apt-get install -y nodejs
+
 RUN set -ex && pip install --upgrade pip
 
 RUN pip install geopandas

@@ -26,6 +26,8 @@ export default function Header() {
         selected={convertUTCToLocalDate(selectedDate ?? "2022-06-20")}
         onChange={(date) =>
           navigate(convertLocalToUTCDate(date).toISOString().split("T")[0])}
+        maxDate={convertUTCToLocalDate(new Date())}
+        minDate={convertUTCToLocalDate(new Date(2010, 0, 1))}
       />
     </header>
   );

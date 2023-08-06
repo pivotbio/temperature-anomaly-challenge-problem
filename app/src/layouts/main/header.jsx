@@ -20,6 +20,7 @@ export default function Header() {
 
   return (
     <header className="relative z-10 max-h flex items-center p-2">
+      Select a Date:{" "}
       <DatePicker
         className="p-2"
         selected={convertUTCToLocalDate(selectedDate ?? "2022-06-20")}
